@@ -9,6 +9,12 @@ export default function Home() {
     setTaskInput(e.target.value);
   };
 
+  const handleTask = (event) => {
+    event.preventDefault();
+    setTodoTask([...todoTask, taskInput]);
+    setTaskInput('');
+  }
+
 
 
   return (
@@ -23,25 +29,25 @@ export default function Home() {
             </div>
           </header>
 
-          <section className='task-input-section'>
-            <div className='input-group'>
-              <div className='input-wrapper'>
-              <input type="text" 
-                      id='taskInput'
-                      className='task-input'
-                      placeholder='What needs to be done today?'
-                      maxLength={200}
-                      autoComplete='off'
-                      required
-                      value={taskInput}
-                      onChange={handleInputChange}
-                      />
-              <div className='char-count'>
-                <span id='charCount'>{taskInput.length}</span>/200
+          <section className='task-input-section'>  
+            <form className='task-form' onSubmit={handleTask}>
+              <div className='task-wrapper'>
+                <input type="text" 
+                        id='taskInput'
+                        className='task-input'
+                        placeholder='What needs to be done today?'
+                        maxLength={200}
+                        autoComplete='off'
+                        required
+                        value={taskInput}
+                        onChange={handleInputChange}
+                        />
+                <div className='char-count'>
+                  <span id='charCount'>{taskInput.length}</span>/200
+                </div>
               </div>
-              </div>
-              <button className='add-task-btn' >ADD TASK</button>
-            </div>
+              <button className='add-task-btn' type='submit'>ADD TASK</button>
+            </form>
           </section>
 
           <main className='task-main'>
@@ -51,13 +57,18 @@ export default function Home() {
                   <span>To-Do</span>
                 </div>
               </div>
-
-              <div className='task-list' id='todo list'>
-                <div className='empty-state'>
-                  <div className='empty-title'>No pending tasks</div>
-                  <div className='empty-discription'>Add a new task above to get start</div>
-                </div>
-              </div>
+              <ul>
+                {todoTask.length === 0 ? (
+                  <div className='empty-state'>
+                    <div className='empty-title'>No pending tasks</div>
+                    <div className='empty-discription'>Add a new task above to get started</div>
+                  </div>
+                ) : (
+                  todoTask.map((t, index) => (
+                    <li key={index} className='task-item'>{t}</li>
+                  ))
+                )}
+              </ul>
             </div>
 
             <div className='task-column completed-column'>
