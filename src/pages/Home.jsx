@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Home() {
+  const [taskInput, setTaskInput] = useState('');
+  const [todoTask, setTodoTask] = useState([]);
+  const [completedTask, setCompletedTask] = useState([]);
+
+  const handleInputChange = (e) => {
+    setTaskInput(e.target.value);
+  };
+
+
+
   return (
     <>
         <div className='container'>
@@ -17,17 +27,20 @@ export default function Home() {
             <div className='input-group'>
               <div className='input-wrapper'>
               <input type="text" 
-                      id='taskinput'
+                      id='taskInput'
                       className='task-input'
                       placeholder='What needs to be done today?'
                       maxLength={200}
                       autoComplete='off'
-                      required/>
+                      required
+                      value={taskInput}
+                      onChange={handleInputChange}
+                      />
               <div className='char-count'>
-                <span id='charcount'>0</span>/200
+                <span id='charCount'>{taskInput.length}</span>/200
               </div>
               </div>
-              <button className='add-task-btn'>ADD TASK</button>
+              <button className='add-task-btn' >ADD TASK</button>
             </div>
           </section>
 
