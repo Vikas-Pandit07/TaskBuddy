@@ -27,7 +27,7 @@ export default function Home() {
                 <span id='charcount'>0</span>/200
               </div>
               </div>
-              <button className='add-task-button'>ADD TASK</button>
+              <button className='add-task-btn'>ADD TASK</button>
             </div>
           </section>
 
