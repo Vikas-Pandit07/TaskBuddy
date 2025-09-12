@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# TaskBuddy 📝  
+A simple and elegant **Task Management App** to organize your daily tasks efficiently.  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/e2a36e02-8eae-4037-a4d1-16bbdf1304a5" />
 
-## Available Scripts
+## 🌟 Features  
+- ➕ Add new tasks easily  
+- ✅ Mark tasks as completed  
+- ❌ Delete tasks  
+- 📊 Separate sections for **To-Do** and **Completed** tasks  
+- 🎨 Clean, responsive UI with modern design  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠️ Tech Stack  
+- **Frontend:** React.js, HTML5, CSS3  
+- **State Management:** React Hooks (`useState`)  
+- **Styling:** CSS / Tailwind (if applied)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Installation & Setup  
 
-### `npm test`
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/TaskBuddy.git
+   cd TaskBuddy
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**  
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. **Run the app**  
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Open in your browser:  
+   ```
+   http://localhost:3000
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Usage  
+1. Enter a task in the input field.  
+2. Click **Add Task** to add it to your list.  
+3. Mark tasks as **Completed** once done.  
+4. Delete tasks anytime.  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📸 Screenshots  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Dashboard View  
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/e2a36e02-8eae-4037-a4d1-16bbdf1304a5" />
+<br>
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/b9449225-0ea9-4313-82e5-37daa408ff75" />
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/d91babec-71f9-4d62-bd5b-aac64db84446" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🤝 Contributing  
+1. Fork the repo  
+2. Create a feature branch (`git checkout -b feature-name`)  
+3. Commit changes (`git commit -m "Added new feature"`)  
+4. Push to branch (`git push origin feature-name`)  
+5. Open a Pull Request  
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
