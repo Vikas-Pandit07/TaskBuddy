@@ -101,7 +101,7 @@
 }
 
 .add-task-btn:active {
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 
 /* Task Containers */
@@ -128,8 +128,8 @@
 
 .column-title {
     font-size: 1.25rem;
-    font-weight: 600;
-    color: black;
+    font-weight: 800;
+    color: white;
 }
 
 .task-list {
@@ -158,18 +158,49 @@
 }
 
 .task-item {
-    background-color: #3b444e;
+    position: relative;
+    background-color: #375061;
     color: white;
-    border: none;
+    border: 1px solid #5f6975;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     margin: 2rem;
     font-weight: 600;
-    box-shadow: 2px 3px 4px 0 #b7c7dd;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    
 }
 
 .task-item:hover {
-    background-color: #2e353d;
+    border-color: #a5aeb8;
+    transform: translateY(-1px);
+}
+
+.check-icon {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    width: 20px;
+    height: 20px;
+    background: rgb(5 150 105 / 0.1);
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.check-icon:hover {
+    background: #059669;
+}
+
+.trash-icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: 20px;
+    height: 20px;
+    background: rgb(220 38 38 / 0.1);
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
+.trash-icon:hover {
+    background: #dc2626;
 }
