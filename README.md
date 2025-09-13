@@ -10,6 +10,11 @@ A simple and elegant **Task Management App** to organize your daily tasks effici
 - 📊 Separate sections for **To-Do** and **Completed** tasks  
 - 🎨 Clean, responsive UI with modern design  
 
+
+## Upcoming features
+- ongoing task section
+- main section where all tasks counting will display 
+- time block which will show when the tasks are started and all
 ---
 
 ## 🛠️ Tech Stack  
